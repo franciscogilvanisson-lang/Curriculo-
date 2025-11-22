@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículo — Gilvanisson Francisco</title>
+  <meta name="description" content="Currículo minimalista — Gilvanisson Francisco — Estudante Front End e Back End" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap" id="app">
+    <!-- LEFT -->
+    <aside class="card left">
+      <div class="controls" style="margin-bottom:12px">
+        <div class="toggle" id="themeToggle" title="Alternar tema" role="button">🌓 Tema</div>
+      </div>
+
+      <div class="profile reveal">
+        <div class="avatar">
+          <img src="img/unnamed.jpg" alt="Foto de Perfil" id="avatarImg" onerror="this.style.filter='grayscale(40%)'">
+        </div>
+        <div>
+          <div class="name">Gilvanisson Francisco</div>
+          <div class="title">Estudante Front End e Back End</div>
+        </div>
+      </div>
+
+      <div class="badges reveal" style="margin-top:18px">
+        <div class="badge">HTML</div>
+        <div class="badge">CSS</div>
+        <div class="badge">JavaScript</div>
+        <div class="badge">Figma</div>
+        <div class="badge">PostgreSQL</div>
+        <div class="badge">Git/GitHub</div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Contato</h3>
+        <div class="contact-list">
+          <div class="muted">E-mail: <a class="link" href="mailto:gilvanisson.dev@gmail.com">gilvanisson.dev@gmail.com</a></div>
+          <div class="muted">Telefone: +55 (79) 98871-6225</div>
+          <div class="muted">LinkedIn: <a class="link" href="https://www.linkedin.com/in/gilvanisson-francisco-881697272?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">gilvanisson</a></div>
+          <div class="muted">GitHub: <a class="link" href="https://github.com/franciscogilvanisson-lang" target="_blank" rel="noopener noreferrer">gilvanisson.dev</a></div>
+        </div>
+
+        <!-- "Sobre mim" aparece na impressão -->
+        <div id="aboutPrintSection">
+          <h3>Sobre mim</h3>
+          <div id="aboutPrint"></div>
+        </div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Formação</h3>
+        <div class="list">
+          <div class="muted">• Técnico em Desenvolvimento Web — 2025</div>
+          <div class="muted">• Informática Básica — 2022</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="card right">
+      <div class="controls" style="margin-bottom:6px">
+        <div class="toggle" id="printBtn" title="Baixar PDF / Imprimir" role="button"> Baixar PDF</div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Sobre mim</h3>
+        <div id="about" class="about" contenteditable="true">
+          Olá — eu sou Gilvanisson Francisco. Estudante com foco em Front End e Back End.
+          Gosto de construir interfaces limpas, resolver problemas e aprender novas tecnologias.
+        </div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Softskills</h3>
+        <div class="skill-list">
+          <div class="skill">Comunicação</div>
+          <div class="skill">Colaboração em projetos</div>
+          <div class="skill">Pensamento lógico</div>
+          <div class="skill">Gestão de tempo</div>
+          <div class="skill">Resolução de problemas</div>
+           <div class="skill">Adaptabilidade a novas tecnologias</div>
+          
+        </div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Hardskills</h3>
+        <div class="skill-list">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Figma</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Git/GitHub</div>
+        </div>
+      </div>
+
+      <div class="section reveal">
+        <h3>Projetos</h3>
+        <div class="project">
+          <small>Projeto A — Web app</small>
+          <div class="muted">Descrição curta do projeto, tecnologias usadas e seu papel.</div>
+        </div>
+        <div class="project" style="margin-top:12px">
+          <small>Projeto B — API / Back-end</small>
+          <div class="muted">Descrição curta do projeto, tecnologias usadas e seu papel.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
