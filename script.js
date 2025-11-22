@@ -6,7 +6,7 @@
   const printAbout = document.getElementById('aboutPrint');
   const DEFAULT_ABOUT = "Olá — eu sou Gilvanisson Francisco. Estudante com foco em Front End e Back End. Gosto de construir interfaces limpas, resolver problemas e aprender novas tecnologias.";
 
-  // 🌗 Tema
+  //  Tema
   const savedTheme = localStorage.getItem('theme-preference');
   function applyTheme(mode){ 
     mode === 'light' ? root.classList.add('light') : root.classList.remove('light'); 
@@ -25,7 +25,7 @@
     if(e.key.toLowerCase() === 'p') window.print();
   });
 
-  // 📝 Sobre mim
+  // Sobre mim
   const ABOUT_KEY = 'resume.about';
   const savedAbout = localStorage.getItem(ABOUT_KEY);
   about.innerHTML = savedAbout || DEFAULT_ABOUT;
@@ -42,13 +42,13 @@
     },600);
   });
 
-  // 🖨️ Imprimir
+  //  Imprimir
   printBtn.addEventListener('click', ()=>{
     printAbout.textContent = about.textContent.trim();
     window.print();
   });
 
-  // ✨ Animação de entrada
+  // Animação de entrada
   const reveals = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
